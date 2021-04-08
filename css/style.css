@@ -1,0 +1,26 @@
+/* Se agrega una nueva dimensión para el container, para aprobechar los costados en resulición FHD */
+@media (min-width: 1700px) {
+    .container {
+        max-width: 1540px;
+    }
+}
+
+/*Coloca la imagen de fondo */
+.img-size {
+    align-self: center;
+    height: 180px;
+    width: 50%;
+    display: block;
+}
+
+.img-size-trans {
+    height: auto;
+    width: 50%;
+}
+
+/* Alinea en forma centrada los DIVs */
+.center {
+    margin: auto;
+    width: 25%;
+    padding: 20px;
+}

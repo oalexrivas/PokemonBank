@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pok&eacute;mon Bank</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-dark">
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand">Pokémon Bank</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="transacciones.html">Historial Transacciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="graficas.html">Gráficos</a>
+                    </li>
+                </ul>
+                <span class="navbar-text mr-5">
+                    Bienvenido, Omar Rivas [<a href="login.html">Salir</a>]
+                </span>
+                <span class="navbar-text">
+                    Cuenta #1234-5678-9
+                </span>
+            </div>
+        </nav>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-dark">
+                <li class="breadcrumb-item"><a href="home.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Pago de Servicios</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <h4 class="h4 text-light my-4">Pago de Servicios</h4>
+        </div>
+        <form>
+            <div class="form-group col-12 col-md-3">
+                <label class="text-light" for="servicio">Servicio</label>
+                <select class="custom-select" id="servicio">
+                    <option value="1">Energía Eléctrica</option>
+                    <option value="2">Internet</option>
+                    <option value="3">Telefonía</option>
+                    <option value="4">Agua Potable</option>
+                </select>
+            </div>
+            <div class="form-group col-12 col-md-3">
+                <label class="text-light" for="monto">Monto</label>
+                <input type="number" class="form-control" id="monto" placeholder="Monto" min="0.01" step="0.01"></input>
+            </div>
+            <div class="form-group ">
+                <div class="col-sm-10">
+                    <input type="button" class="btn btn-secondary" id="btnGuardar" value="Pagar"></input>
+                    <input type="button" class="btn btn-outline-light" onclick="window.location.href = 'home.html';" value="Volver"></input>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/sweetalert.min.js" type="text/javascript"></script>
+    <script src="js/validate.min.js" type="text/javascript"></script>
+    <script src="js/pokemonBank.js" type="text/javascript"></script>
+</body>
+
+</html>
