@@ -32,10 +32,10 @@
                     </li>
                 </ul>
                 <span class="navbar-text mr-5">
-                    Bienvenido, Omar Rivas [<a href="login.html">Salir</a>]
+                    Bienvenido, <span id="lbNombre"></span> [<a href="login.html">Salir</a>]
                 </span>
                 <span class="navbar-text">
-                    Cuenta #1234-5678-9
+                    Cuenta #<span id="lbCuenta"></span>
                 </span>
             </div>
         </nav>
@@ -46,11 +46,12 @@
             </ol>
         </nav>
         <div class="row">
-            <h4 class="h4 text-light my-4">Gráficos</h4>
-        </div>
-        <div class="row">
-            <canvas  id="grafico"></canvas>
-        </div>
+            <h4 class="h4 text-light my-4">Gráfico de Transacciones</h4>
+        </div>        
+    </div>
+
+    <div class="chart-container">
+        <canvas id="grafico"></canvas>
     </div>
 
     <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
@@ -58,6 +59,7 @@
     <script src="js/sweetalert.min.js" type="text/javascript"></script>
     <script src="js/validate.min.js" type="text/javascript"></script>
     <script src="js/chart.min.js" type="text/javascript"></script>
+    <script src="js/utils.js" type="text/javascript"></script>
     <script src="js/pokemonBank.js" type="text/javascript"></script>
 </body>
 

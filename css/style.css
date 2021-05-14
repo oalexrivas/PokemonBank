@@ -24,3 +24,67 @@
     width: 25%;
     padding: 20px;
 }
+
+
+/* Estilos para iconos de servicios */
+.cc-selector input {
+    margin: auto;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.cc-selector input:active+.pagoServicios-cc {
+    opacity: .9;
+}
+
+.cc-selector input:checked+.pagoServicios-cc {
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+}
+
+.electricidad {
+    background-image: url(../img/electricidad.png);
+}
+
+.internet {
+    background-image: url(../img/internet.png);
+}
+
+.telefonia {
+    background-image: url(../img/telefonia.png);
+}
+
+.agua {
+    background-image: url(../img/agua.png);
+}
+
+.pagoServicios-cc {
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100px;
+    height: 70px;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    -webkit-filter: brightness(2) grayscale(1) opacity(.7);
+    -moz-filter: brightness(2) grayscale(1) opacity(.7);
+    filter: brightness(2) grayscale(1) opacity(.7);
+}
+
+.pagoServicios-cc:hover {
+    -webkit-filter: brightness(1.4) grayscale(.5) opacity(.9);
+    -moz-filter: brightness(1.4) grayscale(.5) opacity(.9);
+    filter: brightness(1.4) grayscale(.5) opacity(.9);
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 75vh;
+    width: 80vw;
+}
